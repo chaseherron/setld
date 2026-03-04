@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       {/* ===== HERO ===== */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 py-16 sm:py-24 text-center">
+      <section className="flex flex-col justify-center items-center px-6 pt-20 pb-12 text-center">
         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl">
           Your Landlord Owes You Money.
           <br />
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* ===== HOW IT WORKS ===== */}
-      <section className="py-24 px-6">
+      <section className="pt-12 pb-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-16">
             How It Works
