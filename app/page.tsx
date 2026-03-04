@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       {/* ===== HERO ===== */}
-      <section className="flex flex-col justify-center items-center px-6 pt-20 pb-8 text-center">
+      <section className="flex flex-col justify-center items-center px-6 pt-20 pb-4 text-center">
         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl">
           Your Landlord Owes You Money.
           <br />
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* ===== HOW IT WORKS ===== */}
-      <section className="pt-6 pb-24 px-6">
+      <section className="pt-10 pb-10 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-8">
             How It Works
@@ -142,9 +142,9 @@ export default function Home() {
       </section>
 
       {/* ===== WHY SETLD WORKS ===== */}
-      <section className="py-24 px-6 bg-surface">
+      <section className="py-10 px-6 bg-surface">
         <div className="max-w-4xl mx-auto">
-          <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-16">
+          <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-8">
             Why Setld Works
           </h2>
 
@@ -164,9 +164,9 @@ export default function Home() {
       </section>
 
       {/* ===== FAQ ===== */}
-      <section className="py-24 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-16">
+          <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-8">
             Questions? We Got Answers.
           </h2>
 
@@ -205,7 +205,7 @@ export default function Home() {
       </section>
 
       {/* ===== BOTTOM CTA ===== */}
-      <section id="get-started" className="py-24 px-6 bg-surface scroll-mt-8">
+      <section id="get-started" className="py-10 px-6 bg-surface scroll-mt-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold">
             <span className="text-accent">Get Your Deposit Back</span>
