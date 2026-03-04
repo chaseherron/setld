@@ -43,7 +43,7 @@ const steps = [
   {
     num: "03",
     title: "Send & Get Paid",
-    desc: "One click sends your demand letter. We chase your landlord with 10+ payment reminders over 6 weeks. You get paid, minus our $249 fee.",
+    desc: "One click sends your demand letter. We chase your landlord with 10+ payment reminders over 6 weeks. You get paid. That\u2019s it.*",
   },
 ];
 
@@ -58,7 +58,7 @@ const reasons = [
   },
   {
     title: "Free until you win",
-    desc: "No upfront fees. No subscription. $249 flat fee deducted only when your landlord pays. If they don\u2019t pay, you owe us nothing.",
+    desc: "We only get paid when you do. A flat $249 service fee is deducted when your landlord pays \u2014 if they don\u2019t pay, you owe nothing.",
   },
 ];
 
@@ -117,8 +117,7 @@ export default function Home() {
 
         <p className="mt-6 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed">
           Upload your lease. We build your case and chase your landlord with
-          10+ payment reminders. You pay nothing unless you get your money
-          back. Then it&apos;s $249.
+          10+ payment reminders &mdash; completely free.
         </p>
 
         <button
@@ -128,8 +127,8 @@ export default function Home() {
           Check If You&apos;re Owed Money &rarr;
         </button>
 
-        <p className="mt-4 text-sm text-muted max-w-lg">
-          No upfront cost. No subscription. $249 only when your landlord pays.
+        <p className="mt-4 text-xs text-muted/60 max-w-lg">
+          *$249 service fee applies only when you recover your deposit.
         </p>
 
         <p className="mt-20 text-sm text-muted/60 tracking-wide">
@@ -200,8 +199,8 @@ export default function Home() {
                 Best Value
               </span>
               <h3 className="text-xl font-bold text-accent mt-2">Setld</h3>
-              <p className="text-3xl font-bold mt-2">$249</p>
-              <p className="text-sm text-muted">only when you win</p>
+              <p className="text-3xl font-bold mt-2">FREE*</p>
+              <p className="text-xs text-muted">*$249 when you win</p>
               <ul className="mt-5 space-y-2.5 text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-0.5">&#10003;</span>
@@ -399,6 +398,15 @@ export default function Home() {
           )}
         </div>
       </section>
+
+      {/* ===== FOOTNOTE ===== */}
+      <div className="px-6 pb-8 pt-4">
+        <p className="max-w-3xl mx-auto text-xs text-muted/50 text-center">
+          * A $249 service fee is deducted from your landlord&apos;s payment
+          when you recover your deposit. If you don&apos;t recover anything,
+          you pay nothing.
+        </p>
+      </div>
 
       {/* ===== FOOTER ===== */}
       <footer className="py-12 px-6 border-t border-border">
