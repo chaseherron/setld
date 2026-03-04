@@ -5,11 +5,7 @@ import { useState, useEffect } from "react";
 const faqs = [
   {
     q: "Is this really free?",
-    a: "Yes. You pay nothing until your landlord pays. When they do, our $249 flat fee is deducted from their payment. If they don\u2019t pay, you owe us nothing.",
-  },
-  {
-    q: "How does Setld make money?",
-    a: "$249 flat fee when your landlord pays through our secure payment link, or charged to your card on file if they pay you directly.",
+    a: "Setld is free to use. If your landlord pays, a service fee is deducted from their payment. If they don\u2019t pay, you owe nothing.",
   },
   {
     q: "Is this legal?",
@@ -22,10 +18,6 @@ const faqs = [
   {
     q: "How long does this take?",
     a: "Your demand letter is ready in under 2 minutes. Most landlords respond within 14\u201330 days.",
-  },
-  {
-    q: "Do I need to go to court?",
-    a: "Most deposits are recovered with just the demand letter and reminders. If not, we prepare your complete court filing kit for free.",
   },
 ];
 
@@ -43,7 +35,7 @@ const steps = [
   {
     num: "03",
     title: "Send & Get Paid",
-    desc: "One click sends your demand letter. We chase your landlord with 10+ payment reminders over 6 weeks. You get paid. That\u2019s it.*",
+    desc: "One click sends your demand letter. We chase your landlord with 10+ payment reminders over 6 weeks until they pay.",
   },
 ];
 
@@ -55,10 +47,6 @@ const reasons = [
   {
     title: "We don\u2019t stop at a letter",
     desc: "Competitors send one letter and quit. We send 10+ automated payment reminders, escalate to certified mail, and give you a free small claims court filing kit.",
-  },
-  {
-    title: "Free until you win",
-    desc: "We only get paid when you do. A flat $249 service fee is deducted when your landlord pays \u2014 if they don\u2019t pay, you owe nothing.",
   },
 ];
 
@@ -105,10 +93,6 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden">
       {/* ===== HERO ===== */}
       <section className="min-h-screen flex flex-col justify-center items-center px-6 py-20 text-center">
-        <span className="mb-6 inline-block border border-accent/40 bg-accent/10 text-accent text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full">
-          Free Until You Win
-        </span>
-
         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl">
           Your Landlord Owes You Money.
           <br />
@@ -116,8 +100,8 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed">
-          Upload your lease. We build your case and chase your landlord with
-          10+ payment reminders &mdash; completely free.
+          Upload your lease. Our AI builds your case and sends your landlord
+          10+ payment reminders until they pay. Takes 2 minutes.
         </p>
 
         <button
@@ -127,14 +111,8 @@ export default function Home() {
           Check If You&apos;re Owed Money &rarr;
         </button>
 
-        <p className="mt-4 text-xs text-muted/60 max-w-lg">
-          *$249 service fee applies only when you recover your deposit.
-        </p>
-
-        <p className="mt-20 text-sm text-muted/60 tracking-wide">
-          NYC landlords wrongfully withhold{" "}
-          <span className="text-accent font-semibold">$186M</span> in deposits
-          every year.
+        <p className="mt-4 text-sm text-muted">
+          No upfront cost. No credit card required.
         </p>
       </section>
 
@@ -165,12 +143,12 @@ export default function Home() {
 
       {/* ===== WHY SETLD WORKS ===== */}
       <section className="py-24 px-6 bg-surface">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-16">
             Why Setld Works
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-2 gap-12">
             {reasons.map((item, i) => (
               <div
                 key={item.title}
@@ -185,138 +163,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== COMPARISON ===== */}
-      <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-16">
-            Setld vs. The Alternatives
-          </h2>
-
-          <div className="animate-on-scroll grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Setld */}
-            <div className="bg-surface border-2 border-accent rounded-2xl p-6 relative">
-              <span className="absolute -top-3 left-4 bg-accent text-background text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                Best Value
-              </span>
-              <h3 className="text-xl font-bold text-accent mt-2">Setld</h3>
-              <p className="text-3xl font-bold mt-2">FREE*</p>
-              <p className="text-xs text-muted">*$249 when you win</p>
-              <ul className="mt-5 space-y-2.5 text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-0.5">&#10003;</span>
-                  <span>AI case assembly</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-0.5">&#10003;</span>
-                  <span>10+ payment reminders</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-0.5">&#10003;</span>
-                  <span>Certified mail escalation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-0.5">&#10003;</span>
-                  <span>Court filing kit included</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-0.5">&#10003;</span>
-                  <span>Free until you win</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* DIY */}
-            <div className="bg-surface border border-border rounded-2xl p-6">
-              <h3 className="text-xl font-bold mt-2">DIY</h3>
-              <p className="text-3xl font-bold mt-2">Free</p>
-              <p className="text-sm text-muted">but costs you hours</p>
-              <ul className="mt-5 space-y-2.5 text-sm text-muted">
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>Hours of research</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>One letter, maybe</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>No follow-up</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>No escalation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>Most people give up</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Lawyer */}
-            <div className="bg-surface border border-border rounded-2xl p-6">
-              <h3 className="text-xl font-bold mt-2">Lawyer</h3>
-              <p className="text-3xl font-bold mt-2">$300&ndash;500+</p>
-              <p className="text-sm text-muted">upfront, no guarantee</p>
-              <ul className="mt-5 space-y-2.5 text-sm text-muted">
-                <li className="flex items-start gap-2">
-                  <span className="text-foreground mt-0.5">&#10003;</span>
-                  <span>Professional letter</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>Expensive upfront</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>No payment tracking</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>No reminders</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>No guarantee</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Competitors */}
-            <div className="bg-surface border border-border rounded-2xl p-6">
-              <h3 className="text-xl font-bold mt-2">Competitors</h3>
-              <p className="text-3xl font-bold mt-2">$29&ndash;149</p>
-              <p className="text-sm text-muted">upfront, generic</p>
-              <ul className="mt-5 space-y-2.5 text-sm text-muted">
-                <li className="flex items-start gap-2">
-                  <span className="text-foreground mt-0.5">&#10003;</span>
-                  <span>Template letter</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>Generic, not personalized</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>No payment tracking</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>No reminders</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-0.5">&#10007;</span>
-                  <span>Pay even if you lose</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ===== FAQ ===== */}
-      <section className="py-24 px-6 bg-surface">
+      <section className="py-24 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-16">
             Questions? We Got Answers.
@@ -357,11 +205,10 @@ export default function Home() {
       </section>
 
       {/* ===== BOTTOM CTA ===== */}
-      <section id="get-started" className="py-24 px-6 scroll-mt-8">
+      <section id="get-started" className="py-24 px-6 bg-surface scroll-mt-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold">
-            Ready to{" "}
-            <span className="text-accent">Get Your Money Back?</span>
+            <span className="text-accent">Get Your Deposit Back</span>
           </h2>
 
           <p className="animate-on-scroll mt-4 text-muted text-lg">
@@ -386,7 +233,7 @@ export default function Home() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
-                className="flex-1 bg-surface border border-border rounded-xl px-5 py-4 text-foreground placeholder:text-muted/50 focus:outline-none focus:border-accent transition-colors"
+                className="flex-1 bg-background border border-border rounded-xl px-5 py-4 text-foreground placeholder:text-muted/50 focus:outline-none focus:border-accent transition-colors"
               />
               <button
                 type="submit"
@@ -398,15 +245,6 @@ export default function Home() {
           )}
         </div>
       </section>
-
-      {/* ===== FOOTNOTE ===== */}
-      <div className="px-6 pb-8 pt-4">
-        <p className="max-w-3xl mx-auto text-xs text-muted/50 text-center">
-          * A $249 service fee is deducted from your landlord&apos;s payment
-          when you recover your deposit. If you don&apos;t recover anything,
-          you pay nothing.
-        </p>
-      </div>
 
       {/* ===== FOOTER ===== */}
       <footer className="py-12 px-6 border-t border-border">
