@@ -41,8 +41,8 @@ const steps = [
 
 const reasons = [
   {
-    title: "NYC law is on your side",
-    desc: "HSTPA 2019 gives landlords only 14 days to return your deposit with an itemized statement. Miss the deadline? They forfeit the right to keep any of it.",
+    title: "Your landlord had 14 days.",
+    desc: "Under HSTPA 2019, landlords must return your deposit with an itemized statement within 14 days. Miss it? They forfeit the right to keep any of it \u2014 the full amount is yours.",
   },
   {
     title: "We don\u2019t stop at a letter",
@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       {/* ===== HERO ===== */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 py-20 text-center">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 py-16 sm:py-24 text-center">
         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl">
           Your Landlord Owes You Money.
           <br />
@@ -112,7 +112,7 @@ export default function Home() {
         </button>
 
         <p className="mt-4 text-sm text-muted">
-          No upfront cost. No credit card required.
+          $249 only when your landlord pays. Nothing if they don&apos;t.
         </p>
       </section>
 
