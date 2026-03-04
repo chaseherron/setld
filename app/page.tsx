@@ -117,9 +117,9 @@ export default function Home() {
       </section>
 
       {/* ===== HOW IT WORKS ===== */}
-      <section className="pt-10 pb-24 px-6">
+      <section className="pt-6 pb-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-16">
+          <h2 className="animate-on-scroll font-display text-3xl sm:text-4xl font-bold text-center mb-8">
             How It Works
           </h2>
 
