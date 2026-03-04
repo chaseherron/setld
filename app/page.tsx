@@ -105,6 +105,10 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden">
       {/* ===== HERO ===== */}
       <section className="min-h-screen flex flex-col justify-center items-center px-6 py-20 text-center">
+        <span className="mb-6 inline-block border border-accent/40 bg-accent/10 text-accent text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full">
+          Free Until You Win
+        </span>
+
         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl">
           Your Landlord Owes You Money.
           <br />
@@ -112,8 +116,9 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed">
-          NYC tenants recover their security deposits in minutes &mdash; free
-          demand letter backed by NY law. You only pay $249 when you win.
+          Upload your lease. We build your case and chase your landlord with
+          10+ payment reminders. You pay nothing unless you get your money
+          back. Then it&apos;s $249.
         </p>
 
         <button
@@ -124,8 +129,7 @@ export default function Home() {
         </button>
 
         <p className="mt-4 text-sm text-muted max-w-lg">
-          Free assessment. Free demand letter. Free court filing kit.
-          <br className="sm:hidden" /> $249 only when your landlord pays.
+          No upfront cost. No subscription. $249 only when your landlord pays.
         </p>
 
         <p className="mt-20 text-sm text-muted/60 tracking-wide">
