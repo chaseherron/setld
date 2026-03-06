@@ -14,7 +14,6 @@ type LandlordResponse = (typeof landlordOptions)[number];
 
 export default function StartQuiz() {
   const [depositAmount, setDepositAmount] = useState("");
-  const [address, setAddress] = useState("");
   const [landlordResponse, setLandlordResponse] =
     useState<LandlordResponse | null>(null);
   const [email, setEmail] = useState("");
@@ -24,7 +23,7 @@ export default function StartQuiz() {
   const gotEverythingBack =
     landlordResponse === "Yes \u2014 I got everything back on time";
 
-  const canSubmitQuiz = depositAmount && address && landlordResponse;
+  const canSubmitQuiz = depositAmount && landlordResponse;
 
   const handleQuizSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,7 +36,6 @@ export default function StartQuiz() {
     if (!email) return;
     const quizData = {
       depositAmount,
-      address,
       landlordResponse,
       email,
     };
@@ -63,7 +61,7 @@ export default function StartQuiz() {
               <span className="text-accent">Check If You&apos;re Owed Money</span>
             </h1>
             <p className="mt-3 text-muted text-lg">
-              3 questions. 30 seconds. No signup required.
+              2 questions. 30 seconds. No signup required.
             </p>
 
             <form onSubmit={handleQuizSubmit} className="mt-10 space-y-10">
@@ -91,21 +89,7 @@ export default function StartQuiz() {
                 </div>
               </div>
 
-              {/* Q2: Address */}
-              <div>
-                <label className="block text-lg font-semibold mb-3">
-                  What&apos;s the address of the apartment?
-                </label>
-                <input
-                  type="text"
-                  value={address}
-                  onChange={(e) => setAddress(e.target.value)}
-                  placeholder="e.g. 123 Main St, Apt 4B, Brooklyn, NY"
-                  className="w-full bg-background border border-border rounded-xl px-5 py-4 text-foreground text-lg placeholder:text-muted/40 focus:outline-none focus:border-accent transition-colors"
-                />
-              </div>
-
-              {/* Q3: Landlord response */}
+              {/* Q2: Landlord response */}
               <div>
                 <label className="block text-lg font-semibold mb-3">
                   Did your landlord return your full deposit AND send an
