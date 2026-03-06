@@ -4,35 +4,35 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       {/* ===== HERO ===== */}
-      <section className="flex flex-col justify-center items-center px-6 pt-16 pb-8 text-center min-h-[85svh]">
+      <section className="flex flex-col justify-center items-center px-6 py-12 sm:py-16 text-center">
         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl">
           Your Landlord Owes You Money.
           <br />
           <span className="text-accent">Get It Back.</span>
         </h1>
 
-        <p className="mt-6 text-lg sm:text-xl text-foreground max-w-xl leading-relaxed">
+        <p className="mt-5 text-lg sm:text-xl text-foreground max-w-xl leading-relaxed">
           Take a 30-second quiz to see exactly how much your landlord owes you
           under New York law.
         </p>
 
         <Link
           href="/start"
-          className="mt-10 bg-accent text-background font-bold text-lg sm:text-xl px-10 py-5 rounded-xl hover:brightness-110 transition-all inline-block"
+          className="mt-8 bg-accent text-background font-bold text-lg sm:text-xl px-10 py-5 rounded-xl hover:brightness-110 transition-all inline-block"
         >
           Take The 3 Question Quiz &rarr;
         </Link>
       </section>
 
       {/* ===== PROOF POINTS ===== */}
-      <section className="py-10 px-6">
+      <section className="pt-8 pb-8 sm:pt-12 sm:pb-12 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl sm:text-3xl font-bold text-center mb-8">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-center mb-6">
             Why It Works
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-surface border border-border rounded-2xl p-8">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-surface border border-border rounded-2xl p-6">
               <h3 className="text-xl font-bold text-accent">
                 Your landlord had 14 days.
               </h3>
@@ -43,7 +43,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-surface border border-border rounded-2xl p-8">
+            <div className="bg-surface border border-border rounded-2xl p-6">
               <h3 className="text-xl font-bold text-accent">
                 We don&apos;t stop at one letter.
               </h3>
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-6 text-center">
             <Link
               href="/start"
               className="bg-accent text-background font-bold text-lg sm:text-xl px-10 py-5 rounded-xl hover:brightness-110 transition-all inline-block"
@@ -67,7 +67,7 @@ export default function Home() {
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="py-10 px-6 border-t border-border">
+      <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-sm text-muted">
             Setld is a document preparation service. We are not a law firm and
