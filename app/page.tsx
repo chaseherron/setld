@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-5 text-lg sm:text-xl text-foreground max-w-xl leading-relaxed">
-          Take a 30-second quiz to see exactly how much your landlord owes you
+          Take a 20-second quiz to see exactly how much your landlord owes you
           under New York law.
         </p>
 
@@ -20,7 +20,7 @@ export default function Home() {
           href="/start"
           className="mt-8 bg-accent text-background font-bold text-lg sm:text-xl px-10 py-5 rounded-xl hover:brightness-110 transition-all inline-block"
         >
-          Take The 3 Question Quiz &rarr;
+          Take The 2 Question Quiz &rarr;
         </Link>
       </section>
 
