@@ -421,13 +421,13 @@ export default function Home() {
               ) : (
                 <>
                   <p className="font-display text-3xl sm:text-5xl font-bold text-accent animate-pulse-once">
-                    Your landlord may owe you $
+                    Your landlord owes you $
                     {Number(depositAmount).toLocaleString()}
                   </p>
                   <p className="mt-4 text-muted text-lg max-w-md mx-auto leading-relaxed">
                     Under HSTPA 2019, your landlord was required to return your
                     deposit with an itemized statement within 14 days. They
-                    didn&apos;t. The full amount may be yours.
+                    didn&apos;t. The full amount is yours.
                   </p>
                   <form
                     onSubmit={handleEmailSubmit}
