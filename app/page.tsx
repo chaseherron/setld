@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       {/* ===== HERO ===== */}
-      <section className="flex flex-col justify-center items-center px-6 py-12 sm:py-16 text-center">
+      <section className="flex flex-col justify-center items-center px-6 pt-12 pb-4 sm:pt-16 sm:pb-6 text-center">
         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl">
           Your Landlord Owes You Money.
           <br />
@@ -25,7 +25,7 @@ export default function Home() {
       </section>
 
       {/* ===== PROOF POINTS ===== */}
-      <section className="pt-8 pb-8 sm:pt-12 sm:pb-12 px-6">
+      <section className="pt-4 pb-6 sm:pt-6 sm:pb-8 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-display text-2xl sm:text-3xl font-bold text-center mb-6">
             Why It Works
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-6 text-center">
+          <div className="mt-4 text-center">
             <Link
               href="/start"
               className="bg-accent text-background font-bold text-lg sm:text-xl px-10 py-5 rounded-xl hover:brightness-110 transition-all inline-block"
