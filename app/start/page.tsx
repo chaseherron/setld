@@ -60,7 +60,7 @@ export default function StartQuiz() {
             <h1 className="mt-8 font-display text-3xl sm:text-4xl font-bold">
               <span className="text-accent">Check If You&apos;re Owed Money</span>
             </h1>
-            <p className="mt-3 text-muted text-lg">
+            <p className="mt-3 text-foreground text-lg">
               2 questions. 20 seconds. No signup required.
             </p>
 
