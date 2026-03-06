@@ -61,7 +61,7 @@ export default function StartQuiz() {
               <span className="text-accent">Check If You&apos;re Owed Money</span>
             </h1>
             <p className="mt-3 text-muted text-lg">
-              2 questions. 30 seconds. No signup required.
+              2 questions. 20 seconds. No signup required.
             </p>
 
             <form onSubmit={handleQuizSubmit} className="mt-10 space-y-10">
@@ -197,9 +197,6 @@ export default function StartQuiz() {
                     Get My Free Demand Letter &rarr;
                   </button>
                 </form>
-                <p className="mt-3 text-xs text-muted/60">
-                  $249 only when your landlord pays. Nothing if they don&apos;t.
-                </p>
               </div>
             )}
           </div>
