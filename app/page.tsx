@@ -20,7 +20,7 @@ export default function Home() {
           href="/start"
           className="mt-10 bg-accent text-background font-bold text-lg sm:text-xl px-10 py-5 rounded-xl hover:brightness-110 transition-all inline-block"
         >
-          Take the 3 Question Quiz &rarr;
+          Take The 3 Question Quiz &rarr;
         </Link>
       </section>
 
